@@ -1,5 +1,9 @@
 let swiper = new Swiper(".mySwiper.swiper-one", {
   direction: "vertical",
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,

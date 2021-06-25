@@ -1,10 +1,5 @@
 .gallery {
-  width: 100%;
-  height: 1000px;
-  img {
-    cursor: pointer;
-  }
-
+  padding: 140px;
   .strip {
     border: 1px solid #2c4058;
     width: 155px;
@@ -44,11 +39,21 @@
   .button:hover {
     opacity: 0.5;
   }
-  .button2 {
-    margin: 0 auto;
+  .view {
+    position: relative;
+    transform: translate(50%, -300%);
+    top: -50%;
+    left: 35%;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.3s;
   }
-
-  img:hover {
-    opacity: 0.5;
+  .view:hover {
+    opacity: 1;
+    cursor: pointer;
   }
 }

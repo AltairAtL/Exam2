@@ -1,75 +1,79 @@
 header {
   width: 100%;
-  height: 900px;
+  height: 1000px;
   background: url("../img/Overlay.png") center center no-repeat;
   background-size: cover;
-  // padding-top: 0px;
-
   opacity: 1;
 
-  .slide_Animation:before {
-    content: "";
-    background: url("../img/Photo.png") center center no-repeat;
-    height: 900px;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transform: translateY(100%);
-    animation: TheFirstPicture 30s ease-in-out infinite;
-    z-index: -1;
-    opacity: 1;
-  }
-  .slide_Animation:after {
-    content: "";
-    background: url("../img/Photo1.png") center center no-repeat;
-    height: 900px;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transform: translate(-100%, -100%);
-    animation: TheSecondPicture 30s 15s ease-in-out infinite;
-    z-index: -1;
-    opacity: 1;
-  }
+  // .slide_Animation:before {
+  //   content: "";
+  //   background: url("../img/Photo.png") center center no-repeat;
+  //   height: 900px;
+  //   background-size: cover;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   transform: translateY(100%);
+  //   animation: TheFirstPicture 30s ease-in-out infinite;
+  //   z-index: -1;
+  //   opacity: 1;
+  // }
+  // .slide_Animation:after {
+  //   content: "";
+  //   background: url("../img/Photo1.png") center center no-repeat;
+  //   height: 900px;
+  //   background-size: cover;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   transform: translate(-100%, -100%);
+  //   animation: TheSecondPicture 30s 15s ease-in-out infinite;
+  //   z-index: -1;
+  //   opacity: 1;
+  // }
 
-  @keyframes TheFirstPicture {
-    0% {
-      transform: translateY(-100%);
-    }
-    50% {
-      transform: translateY(0%);
-    }
-    100% {
-      transform: translateY(100%);
-    }
-  }
-  @keyframes TheSecondPicture {
-    0% {
-      transform: translateY(-100%);
-    }
-    50% {
-      transform: translateY(0%);
-    }
-    100% {
-      transform: translateY(100%);
-    }
-  }
+  // @keyframes TheFirstPicture {
+  //   0% {
+  //     transform: translateY(-100%);
+  //   }
+  //   50% {
+  //     transform: translateY(0%);
+  //   }
+  //   100% {
+  //     transform: translateY(100%);
+  //   }
+  // }
+  // @keyframes TheSecondPicture {
+  //   0% {
+  //     transform: translateY(-100%);
+  //   }
+  //   50% {
+  //     transform: translateY(0%);
+  //   }
+  //   100% {
+  //     transform: translateY(100%);
+  //   }
+  // }
+
   .container_navigation {
     position: absolute;
-    top: 0;
-    width: 100%;
-    height: 80px;
+    top: 20px;
     z-index: 900;
   }
   .header__logo img {
+    margin-left: 0px;
     padding-top: 18px;
     cursor: pointer;
+  }
+  @media (max-width: 1399.98px) {
+    .header__logo {
+      display: flex;
+      justify-content: center;
+    }
   }
   .header__logo img:hover {
     opacity: 0.5;
@@ -80,15 +84,19 @@ header {
     width: 570px;
     display: flex;
     justify-content: space-between;
-    margin-left: 10px;
+    margin-left: 80px;
     padding: 0;
+  }
+  @media (max-width: 1399.98px) {
+    ul {
+      margin: 0 auto;
+    }
   }
   li {
     a {
       display: flex;
       justify-content: space-between;
       align-items: center;
-
       text-decoration: none;
       color: #fff;
     }
@@ -111,16 +119,28 @@ header {
       font-size: 17px;
     }
   }
+  .haeder__link:first-child {
+    margin-left: 250px;
+  }
   .haeder__link {
-    justify-content: space-between;
     text-decoration: none;
     margin-left: 20px;
-
     img:hover {
       opacity: 0.5;
     }
   }
+  @media (max-width: 1399.98px) {
+    .link {
+      display: flex;
+      justify-content: center;
+    }
+    .haeder__link:first-child {
+      margin-left: 0px;
+    }
+  }
+
   .link {
+    display: flex;
     padding-top: 18px;
   }
   .title_text {
@@ -148,21 +168,51 @@ header {
       padding-top: 20px;
     }
   }
-  .arrowDown {
-    text-align: center;
-    margin-top: 220px;
-    a:hover,
-    a:focus {
-      opacity: 0.5;
-    }
-  }
   .swiper-container {
     width: 100%;
-    height: 900px;
+    height: 1000px;
   }
 
   .swiper-slide img {
     width: 100%;
-    height: 900px;
+    height: 1000px;
+  }
+  .heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  h1 {
+    text-align: center;
+    left: 50%;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "gothambook";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 90px;
+    line-height: 100px;
+    padding-top: 0px;
+  }
+  .heading_p {
+    font-family: "gothambook";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-top: 0px;
+  }
+  .Down {
+    position: absolute;
+    bottom: -800px;
+    text-align: center;
+  }
+  .Down:hover {
+    opacity: 0.5;
   }
 }
