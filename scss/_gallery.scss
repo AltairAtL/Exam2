@@ -3,7 +3,7 @@
   .strip {
     border: 1px solid #2c4058;
     width: 155px;
-    margin: 100px auto 30px;
+    margin: 10px auto 30px;
   }
   h2 {
     font-family: "gothambold";
@@ -41,7 +41,7 @@
   }
   .view {
     position: relative;
-    transform: translate(50%, -300%);
+    transform: translate(80%, -320%);
     top: -50%;
     left: 35%;
     width: 80px;
@@ -50,10 +50,14 @@
     align-items: center;
     justify-content: center;
     opacity: 0;
+    // background-color: red;
     transition: 0.3s;
   }
   .view:hover {
     opacity: 1;
     cursor: pointer;
+  }
+  .gallery__img {
+    width: 100%;
   }
 }

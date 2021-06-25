@@ -1,7 +1,8 @@
 .whatWeDo {
   width: 100%;
-  height: 1600px;
+  // height: 1600px;
   background: #ffffff;
+  padding: 100px 10px;
   .strip {
     width: 155px;
     margin: 100px auto 30px;
@@ -90,5 +91,33 @@
     line-height: 30px;
     margin-top: 45px;
     color: #000000;
+  }
+  @media (max-width: 1199.98px) {
+    .info_text,
+    .info_text_2 {
+      text-align: center;
+      padding-left: 100px;
+    }
+    h3 {
+      margin: 70px 0 0;
+    }
+    .second_heading {
+      text-align: center;
+    }
+    .text_block {
+      width: auto;
+      text-align: center;
+    }
+  }
+  @media (max-width: 1399.98px) {
+    .blue_background,
+    .blue_background2 {
+      display: none;
+    }
+  }
+  .whatWeDo_firstPhoto {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
   }
 }

@@ -378,17 +378,6 @@ header .header__logo img {
   cursor: pointer;
 }
 
-@media (max-width: 1399.98px) {
-  header .header__logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
 header .header__logo img:hover {
   opacity: 0.5;
 }
@@ -405,12 +394,6 @@ header ul {
           justify-content: space-between;
   margin-left: 80px;
   padding: 0;
-}
-
-@media (max-width: 1399.98px) {
-  header ul {
-    margin: 0 auto;
-  }
 }
 
 header li a {
@@ -460,20 +443,6 @@ header .haeder__link {
 
 header .haeder__link img:hover {
   opacity: 0.5;
-}
-
-@media (max-width: 1399.98px) {
-  header .link {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  header .haeder__link:first-child {
-    margin-left: 0px;
-  }
 }
 
 header .link {
@@ -562,10 +531,38 @@ header .Down:hover {
   opacity: 0.5;
 }
 
+@media (max-width: 1399.98px) {
+  header .header__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .Down {
+    bottom: -700px;
+  }
+  header ul {
+    margin: 0 auto;
+  }
+  header .link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .haeder__link:first-child {
+    margin-left: 0px;
+  }
+}
+
 .whatWeDo {
   width: 100%;
-  height: 1600px;
   background: #ffffff;
+  padding: 100px 10px;
 }
 
 .whatWeDo .strip {
@@ -667,6 +664,37 @@ header .Down:hover {
   line-height: 30px;
   margin-top: 45px;
   color: #000000;
+}
+
+@media (max-width: 1199.98px) {
+  .whatWeDo .info_text,
+  .whatWeDo .info_text_2 {
+    text-align: center;
+    padding-left: 100px;
+  }
+  .whatWeDo h3 {
+    margin: 70px 0 0;
+  }
+  .whatWeDo .second_heading {
+    text-align: center;
+  }
+  .whatWeDo .text_block {
+    width: auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1399.98px) {
+  .whatWeDo .blue_background,
+  .whatWeDo .blue_background2 {
+    display: none;
+  }
+}
+
+.whatWeDo .whatWeDo_firstPhoto {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .latestNews {
@@ -802,7 +830,7 @@ header .Down:hover {
 .gallery .strip {
   border: 1px solid #2c4058;
   width: 155px;
-  margin: 100px auto 30px;
+  margin: 10px auto 30px;
 }
 
 .gallery h2 {
@@ -844,8 +872,8 @@ header .Down:hover {
 
 .gallery .view {
   position: relative;
-  -webkit-transform: translate(50%, -300%);
-          transform: translate(50%, -300%);
+  -webkit-transform: translate(80%, -320%);
+          transform: translate(80%, -320%);
   top: -50%;
   left: 35%;
   width: 80px;
@@ -865,6 +893,10 @@ header .Down:hover {
 .gallery .view:hover {
   opacity: 1;
   cursor: pointer;
+}
+
+.gallery .gallery__img {
+  width: 100%;
 }
 
 .footer {
@@ -942,6 +974,23 @@ header .Down:hover {
           flex: 0 0 100%;
   font-size: 14px;
   line-height: 18px;
+}
+
+@media (max-width: 767.98px) {
+  .footer .footer {
+    margin-top: 300px;
+    width: 100%;
+  }
+  .footer .footer__inner {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .entryField {
@@ -1034,6 +1083,7 @@ header .Down:hover {
 
 .entryField .connection__email:focus,
 .entryField .connection__Mollie:focus {
+  outline: none;
   opacity: 1;
 }
 

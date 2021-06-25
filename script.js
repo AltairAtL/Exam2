@@ -16,6 +16,17 @@ let swiperTwo = new Swiper(".swiper-container.swiper-two", {
   slidesPerGroup: 1,
   loop: true,
   loopFillGroupWithBlank: true,
+  breakpoints: {
+    556: {
+      slidesPerView: 1,
+    },
+    767: {
+      slidesPerView: 2,
+    },
+    1400: {
+      slidesPerView: 3,
+    },
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",

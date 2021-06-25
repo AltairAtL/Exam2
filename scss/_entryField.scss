@@ -69,6 +69,7 @@
   }
   .connection__email:focus,
   .connection__Mollie:focus {
+    outline: none;
     opacity: 1;
   }
   ::placeholder {
