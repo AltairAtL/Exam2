@@ -4,14 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/plugins/colorbox/example1/colorbox.css"
+    />
     <link rel="stylesheet" href="/css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <!-- <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-      crossorigin="anonymous"
-    /> -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
@@ -55,7 +54,6 @@
         <div class="swiper-pagination"></div>
       </div>
       <div class="container">
-        <!-- slide_Animation  этот класс для блока выше фоновой анимации в div class="container slide_Animation"  и закомитить блок div class="swiper-container mySwiper swiper-one"-->
         <div class="row container_navigation">
           <div class="col-xxl-3 col-sm-12 header__logo">
             <a href="#" target="_blank">
@@ -145,22 +143,6 @@
             </a>
           </div>
         </div>
-
-        <!-- <div class="row title_text">
-          <div class="col-12">
-            <h1>Simple & modern</h1>
-          </div>
-          <div class="col-12">
-            <p>We make the world's beautiful every day</p>
-          </div>
-          <div class="row arrowDown">
-            <div class="col-12">
-              <a href="#gallery">
-                <img src="img/Down.svg" alt="Down" />
-              </a>
-            </div>
-          </div>
-        </div> -->
       </div>
     </header>
     <section class="whatWeDo" id="section2">
@@ -347,11 +329,16 @@
           </div>
           <div class="col-xl-6 col-lg-12">
             <div class="gallery__img">
-              <img
-                class="gallery__img"
-                src="img/Image Hovered.png"
-                alt="Hovered"
-              />
+              <a
+                class="colorbox"
+                data-fancybox="group-1"
+                href="img/Image Hovered.png"
+                ><img
+                  class="gallery__img"
+                  src="img/Image Hovered.png"
+                  alt="Hovered"
+              /></a>
+
               <img class="view" src="img/360.png" alt="360" />
             </div>
           </div>
@@ -359,26 +346,42 @@
             <div class="row offset-0 gx-2 gy-1">
               <div class="col-6">
                 <div class="gallery__img">
-                  <img class="gallery__img" src="img/Image.png" alt="Image" />
-                  <!-- <img class="view" src="img/360.png" alt="360" /> -->
+                  <a
+                    class="colorbox"
+                    data-fancybox="group-1"
+                    href="img/Image.png"
+                    ><img class="gallery__img" src="img/Image.png" alt="Image"
+                  /></a>
                 </div>
               </div>
               <div class="col-6">
                 <div class="gallery__img">
-                  <img class="gallery__img" src="img/Image1.png" alt="Image" />
-                  <!-- <img class="view" src="img/360.png" alt="360" /> -->
+                  <a
+                    class="colorbox"
+                    data-fancybox="group-1"
+                    href="img/Image1.png"
+                    ><img class="gallery__img" src="img/Image1.png" alt="Image"
+                  /></a>
                 </div>
               </div>
               <div class="col-6">
                 <div class="gallery__img">
-                  <img class="gallery__img" src="img/Image2.png" alt="Image" />
-                  <!-- <img class="view" src="img/360.png" alt="360" /> -->
+                  <a
+                    class="colorbox"
+                    data-fancybox="group-1"
+                    href="img/Image2.png"
+                    ><img class="gallery__img" src="img/Image2.png" alt="Image"
+                  /></a>
                 </div>
               </div>
               <div class="col-6">
                 <div class="gallery__img">
-                  <img class="gallery__img" src="img/Image3.png" alt="Image" />
-                  <!-- <img class="view" src="img/360.png" alt="360" /> -->
+                  <a
+                    class="colorbox"
+                    data-fancybox="group-1"
+                    href="img/Image3.png"
+                    ><img class="gallery__img" src="img/Image3.png" alt="Image"
+                  /></a>
                 </div>
               </div>
             </div>
@@ -453,43 +456,6 @@
               </div>
             </div>
           </div>
-          <!-- <div class="connection__left">
-            <p>
-              <img src="img/Vector.png" alt="Vector" />
-              91 Nolan Extensions Suite 670
-            </p>
-            <p>
-              <img src="img/Vector (1).png" alt="Phone" />
-              <a href="tel:+001 356-868-2454">+001 356-868-2454</a>
-            </p>
-            <p>
-              <img src="img/Vector (2).png" alt="Mail" />
-              <a href="mailto:gahuy93@gmail.com">gahuy93@gmail.com</a>
-            </p>
-            <p>
-              <img src="img/Vector (3).png" alt="Time" />
-              From 07:05AM to 19:30PM
-            </p>
-          </div> -->
-          <!-- <div class="connection__right">
-            <form action="#" class="connection__form" method="POST">
-              <input
-                class="connection__Mollie"
-                type="text"
-                name="Phone_surname"
-                id="Phone_surname"
-                placeholder="Mollie Medina"
-              />
-              <input
-                class="connection__email"
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Email"
-              />
-              <input class="connection__submit" type="submit" value="SUBMIT" />
-            </form>
-          </div> -->
         </div>
       </div>
     </section>
@@ -520,15 +486,11 @@
         </div>
       </div>
     </footer>
-    <!-- <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-      crossorigin="anonymous"
-    ></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/plugins/colorbox/jquery.colorbox-min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKQvG-Dfz9PinJy5Mf7vt4GZBQVvC9_Gc&v=weekly"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

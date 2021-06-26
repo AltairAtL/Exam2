@@ -50,7 +50,6 @@
     align-items: center;
     justify-content: center;
     opacity: 0;
-    // background-color: red;
     transition: 0.3s;
   }
   .view:hover {
@@ -59,5 +58,8 @@
   }
   .gallery__img {
     width: 100%;
+  }
+  .gallery__img:hover {
+    opacity: 0.8;
   }
 }

@@ -1,3 +1,9 @@
+// Enlargement Gallery
+$(function () {
+  $("a.colorbox").colorbox({ current: "Фото {current} из {total}" });
+});
+
+// slider header
 let swiper = new Swiper(".mySwiper.swiper-one", {
   direction: "vertical",
   autoplay: {
@@ -10,6 +16,7 @@ let swiper = new Swiper(".mySwiper.swiper-one", {
   },
 });
 
+// LATEST NEWS slider
 let swiperTwo = new Swiper(".swiper-container.swiper-two", {
   slidesPerView: 3,
   spaceBetween: 44,
@@ -39,6 +46,7 @@ let swiperTwo = new Swiper(".swiper-container.swiper-two", {
   removeClippedSubviews: false,
 });
 
+// google map
 const mapWrapper = document.getElementById("map");
 const map = new google.maps.Map(mapWrapper, {
   center: { lat: 40.7143, lng: -74.006 },

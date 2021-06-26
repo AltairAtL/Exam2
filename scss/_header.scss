@@ -4,61 +4,6 @@ header {
   background: url("../img/Overlay.png") center center no-repeat;
   background-size: cover;
   opacity: 1;
-
-  // .slide_Animation:before {
-  //   content: "";
-  //   background: url("../img/Photo.png") center center no-repeat;
-  //   height: 900px;
-  //   background-size: cover;
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   right: 0;
-  //   bottom: 0;
-  //   transform: translateY(100%);
-  //   animation: TheFirstPicture 30s ease-in-out infinite;
-  //   z-index: -1;
-  //   opacity: 1;
-  // }
-  // .slide_Animation:after {
-  //   content: "";
-  //   background: url("../img/Photo1.png") center center no-repeat;
-  //   height: 900px;
-  //   background-size: cover;
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   right: 0;
-  //   bottom: 0;
-  //   transform: translate(-100%, -100%);
-  //   animation: TheSecondPicture 30s 15s ease-in-out infinite;
-  //   z-index: -1;
-  //   opacity: 1;
-  // }
-
-  // @keyframes TheFirstPicture {
-  //   0% {
-  //     transform: translateY(-100%);
-  //   }
-  //   50% {
-  //     transform: translateY(0%);
-  //   }
-  //   100% {
-  //     transform: translateY(100%);
-  //   }
-  // }
-  // @keyframes TheSecondPicture {
-  //   0% {
-  //     transform: translateY(-100%);
-  //   }
-  //   50% {
-  //     transform: translateY(0%);
-  //   }
-  //   100% {
-  //     transform: translateY(100%);
-  //   }
-  // }
-
   .container_navigation {
     position: absolute;
     top: 20px;
